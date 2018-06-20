@@ -1,0 +1,312 @@
+/*
+ 1.) Global Typography
+ ----------------------------------------*/
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 100%;
+}
+body {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: #181B31;
+}
+/*
+ 2.0.1) Font Face
+ -----------------------------*/
+
+/*
+ 2.0.2) Global Headings
+ -----------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #161e21;
+	margin-bottom: 15px;
+}
+h1 {
+	color: #fff;
+	font-size: 27px;
+}
+h2 {
+	color: #5e5c69;
+	font-size: 24px;
+}
+h3 {
+	color: #fff;
+	font-size: 22px;
+}
+h4 {
+
+}
+h5 {
+	color: #181B31;
+	font-size: 20px;
+}
+h6 {
+	font-size: 18px;
+	color: #FFFFFF;
+}
+img {
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+::-webkit-input-placeholder {
+	color: #94939f;
+	opacity: 1;
+}
+:-moz-placeholder {/* Firefox 18- */
+	color: #94939f;
+	opacity: 1;
+}
+::-moz-placeholder {/* Firefox 19+ */
+	color: #94939f;
+	opacity: 1;
+}
+:-ms-input-placeholder {
+	color: #94939f;
+	opacity: 1;
+}
+ul, ol {
+	list-style-type: none;
+	padding: 0;
+}
+/*
+ 2.0.3) Form Elements
+ -----------------------------*/
+
+/*
+ 2.0.5) General Text Formatting
+ -----------------------------------*/
+
+/*
+ 2.0.6) Link style
+ -------------------------*/
+a {
+	text-decoration: none;
+}
+a:hover, a:focus {
+	text-decoration: none;
+}
+a:active, a:focus {
+	outline: none;
+}
+/* 2.0.7) Button Styles
+ -------------------------*/
+.btn {
+	font-family: 'Roboto', sans-serif;
+	min-width: 150px;
+	min-height: 50px;
+	padding: 19px;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #78B93F;
+	border: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	font-size: 14px;
+	text-align: center;
+}
+.btn-secondary {
+	border: 1px solid #78B93F;
+	color: #181B31;
+	background-color: transparent;
+}
+.btn-primary:hover {
+	color: #fff;
+	background-color: #0069d9;
+}
+.btn-secondary:hover {
+	color: #fff;
+	background-color: #78B93F;
+	border: 1px solid #78B93F;
+}
+.btn:focus {
+	box-shadow: none !important;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled)
+:not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+	color: #181B31;
+	background-color: transparent;
+	border: none;
+}
+/*
+ 2.0.8) Sprite Icons
+ -------------------------*/
+[class^="icon-"], [class*="icon-"] {
+	background-image: url(../images/sprite.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	border: none;
+}
+.icon-twitter {
+	background-position: -5px -8px;
+	width: 18px;
+	height: 15px;
+}
+.icon-linkdin {
+	background-position: -32px -7px;
+	width: 18px;
+	height: 16px;
+}
+/* Containers
+ ----------------------------------------------------------------------------------------------------*/
+.container {
+	margin: 0 auto;
+	max-width: 1215px;
+	width: 100%;
+}
+
+/*
+ The following zoom:1 rule is specifically for IE6 + IE7.
+ Move to separate stylesheet if invalid CSS is a problem.
+ */
+/*
+ 4.) Header Styles
+ ------------------------------*/
+.navbar-brand {
+	width: 130px;
+	margin-right: auto;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 22px;
+	padding: 10px;
+}
+.navbar-collapse {
+	position: absolute;
+	width: 100%;
+	background-color: #222439;
+	left: 0;
+	z-index: 2;
+	top: 73px;
+}
+.header {
+	position: absolute;
+	padding: 10px 0;
+	width: 100%;
+	left: 0;
+	top: 0;
+	border-bottom: 1px solid #728083;
+}
+.navbar {
+	position: static;
+	padding: 0;
+}
+.header-social-links li {
+	display: inline-block;
+	margin-right: 10px;
+}
+.header-social-links li:last-child {
+	margin-right: 0;
+}
+/*
+ 5.) Footer Styles
+ ------------------------------*/
+.footer h6 {
+	margin-bottom: 15px;
+}
+.footer-logo {
+	margin-bottom: 20px;
+}
+.footer {
+	background-color: #222439;
+	padding: 20px 0;
+}
+.footer-list li {
+	margin-bottom: 15px;
+}
+.footer-list a:hover {
+	color: #fff;
+}
+.footer-list a {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.footer-list a, .footer-list span, .footer-list address {
+	color: #B5B7C4;
+	font-size: 14px;
+}
+.footer-list address {
+	line-height: 1.7;
+}
+.footer-list {
+	margin-bottom: 25px;
+}
+.footer-bottom p, .website-design span, .website-design a {
+	color: #B5B7C4;
+	font-size: 14px;
+	line-height: 1.5;
+}
+.website-design a {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.website-design a:hover {
+	color: #fff;
+}
+.footer-bottom p {
+	margin-bottom: 15px;
+}
+.footer-bottom p a {
+	color: #fff;
+}
+.social-icon li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	line-height: 1;
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+.social-icon li img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.normal-img {
+	visibility: visible;
+	opacity: 1;
+}
+.hover-img {
+	visibility: hidden;
+	opacity: 0;
+}
+.social-icon li:hover .normal-img {
+	visibility: hidden;
+	opacity: 0;
+}
+.social-icon li:hover .hover-img {
+	visibility: visible;
+	opacity: 1;
+}
+.social-icon li:hover .icon-twitter {
+	background-position: -5px -32px;
+	width: 18px;
+	height: 15px;
+}
+.social-icon li:hover .icon-linkdin {
+	background-position: -32px -31px;
+	width: 18px;
+	height: 16px;
+}
+
